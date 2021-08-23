@@ -18,5 +18,8 @@
   "homepage": "https://github.com/pvskp/cotacao-moedas#readme",
   "devDependencies": {
     "electron": "^13.2.1"
+  },
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
   }
 }
