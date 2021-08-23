@@ -1,15 +1,15 @@
-var actualDolar = document.getElementById("usd");
-var actualEuro = document.getElementById("eur");
-var actualBitcoin = document.getElementById("btc");
 
 function applyCot(dolar, euro, bitcoin){
-    actualDolar.innerHTML = dolar;
-    actualEuro.innerHTML = euro;
-    actualBitcoin.innerHTML = bitcoin;
+    var actualDolar = document.getElementById("usd");
+    var actualEuro = document.getElementById("eur");
+    var actualBitcoin = document.getElementById("btc");
+
+    actualDolar.innerText = new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'brl'}).format(dolar);
+    actualEuro.innerText = new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'brl'}).format(euro);
+    actualBitcoin.innerText = new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'brl'}).format(bitcoin);
 }
 
 function requestAPI(url) {
-    // var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
     var request = new XMLHttpRequest();
     request.open("GET", url, false);
     request.send();
@@ -30,4 +30,4 @@ function main() {
 
 main();
 
-setInterval(main, 1000)
+setInterval(main, 10000)
