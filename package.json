@@ -1,0 +1,22 @@
+{
+  "name": "cotacao-moedas",
+  "version": "1.0.0",
+  "description": "Cotacao atual do euro, dolar, real e bitcoin",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvskp/cotacao-moedas.git"
+  },
+  "author": "pvskp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pvskp/cotacao-moedas/issues"
+  },
+  "homepage": "https://github.com/pvskp/cotacao-moedas#readme",
+  "devDependencies": {
+    "electron": "^13.2.1"
+  }
+}
