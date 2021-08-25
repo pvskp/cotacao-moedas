@@ -15,16 +15,24 @@ body{
 }
 
 h1{
+    /* justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 1125px;
+    background-color: rgba(215, 231, 215, 0.459);
     text-align: center;
     font-size: 50px;
 }
 
 .coin-box{
-    width: 250px;
-    max-width: 250px;
+    border-radius: 15px;
+    background-color: rgba(215, 231, 215, 0.459);
+    width: 350px;
+    max-width: 350px;
     /* background-color: red; */
     /* border-radius: 15px; */
-    margin: 75px;
+    margin: 20px;
     margin-top: 0;
     text-align: center;
     font-size: 50px;
